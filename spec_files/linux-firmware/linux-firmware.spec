@@ -54,6 +54,7 @@ License:	LicenseRef-Callaway-Redistributable-no-modification-permitted
 Requires:	linux-firmware-whence = %{version}-%{release}
 %description -n amd-gpu-firmware
 Firmware for AMD amdgpu and radeon GPUs.
+Patch: fixseg.patch
 
 %package -n intel-gpu-firmware
 Summary:	Firmware for Intel GPUs
