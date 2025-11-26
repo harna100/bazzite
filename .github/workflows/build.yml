@@ -60,14 +60,14 @@ jobs:
         image:
           - bazzite
           - bazzite-gnome
-          - bazzite-deck
-          - bazzite-deck-gnome
-          - bazzite-deck-nvidia
-          - bazzite-deck-nvidia-gnome
-          - bazzite-nvidia
-          - bazzite-gnome-nvidia
-          - bazzite-nvidia-open
-          - bazzite-gnome-nvidia-open
+          # - bazzite-deck
+          # - bazzite-deck-gnome
+          # - bazzite-deck-nvidia
+          # - bazzite-deck-nvidia-gnome
+          # - bazzite-nvidia
+          # - bazzite-gnome-nvidia
+          # - bazzite-nvidia-open
+          # - bazzite-gnome-nvidia-open
         include:
           - fedora_version: 43
             kernel_version: ${{ (github.ref_name == 'testing' || github.ref_name == 'unstable') && 'latest' || 'latest' }}
@@ -290,8 +290,8 @@ jobs:
           prev-ref: "${{ steps.base.outputs.prev_ref }}"
           version: "${{ steps.labels.outputs.tag }}"
           labels: |
-            io.artifacthub.package.logo-url=https://raw.githubusercontent.com/ublue-os/bazzite/main/repo_content/logo.png
-            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/bazzite/refs/heads/main/README.md
+            io.artifacthub.package.logo-url=https://raw.githubusercontent.com/harna100/bazzite/main/repo_content/logo.png
+            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/harna100/bazzite/refs/heads/main/README.md
             org.opencontainers.image.created=<timestamp>
             org.opencontainers.image.description=Bazzite is a custom image that brings the best of Linux gaming to all of your devices - including your favorite handheld.
             org.opencontainers.image.licenses=Apache-2.0
